@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
@@ -22,6 +23,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
@@ -33,5 +41,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //android lifecycle ext
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+
+    //viewmodel scope
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    //lifecycle scope
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0'
+    // livedata scope
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
 
 }
