@@ -7,6 +7,10 @@
     <color name="white">#ffffff</color>
     <color name="dirty_white">#C3C0C0</color>
     <color name="greenButton">#0D9F67</color>
+    <color name="hint_color">#919191</color>
+    <color name="facebook">#3B5998</color>
+    <color name="twitter">#55ACEE</color>
+
 
 <!--    On boarding colors-->
     <color name="onBoardingAlpha">#BF303132</color>

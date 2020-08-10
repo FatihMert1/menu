@@ -4,4 +4,13 @@
     <string name="onBoardingWelcome">The Little Coffee Shop serves specially coffee, fancy grilled cheese sandwiches, scratch cooking, craft ales, and cider.</string>
     <string name="get_started">Get Started!</string>
     <string name="check_out_popular_drinks">Check out popular drinks</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="sign_up_social_media"><font color='#0D9F67'>Sign Up</font>\n Sign in with Facebook or Twitter</string>
+    <string name="already_have_account_skip">Already Have Account - Skip</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
 </resources>

@@ -7,11 +7,11 @@ import com.mert.rahman.fatih.menu.ui.SplashFragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.onboarding_search)
 
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.root_activity_main,SplashFragment())
-            .commit()
+//        supportFragmentManager.beginTransaction()
+//            .replace(R.id.root_activity_main,SplashFragment())
+//            .commit()
     }
 }
