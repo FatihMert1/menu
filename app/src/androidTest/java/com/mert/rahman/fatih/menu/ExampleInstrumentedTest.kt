@@ -1,5 +1,9 @@
 package com.mert.rahman.fatih.menu
 
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 
@@ -20,5 +24,10 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.mert.rahman.fatih.menu", appContext.packageName)
+    }
+
+    @Test
+    fun test_example() {
+        onView(withId(R.id.bottom)).check(matches(isDisplayed()))
     }
 }
